@@ -1,4 +1,5 @@
 public class Device {
     private String name;
-    private String models;
+    private String model;
+    private String modelType;
 }
