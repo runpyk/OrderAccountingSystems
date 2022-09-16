@@ -29,7 +29,7 @@ public class Employee {
 
     public String PQ() {
         String message;
-        message = "ПІБ робітника:" + this.PIB + "Кваліфікація: " + this.qualification;
+        message = "ПІБ робітника: " + this.PIB + "Кваліфікація: " + this.qualification;
 
         return message;
 
