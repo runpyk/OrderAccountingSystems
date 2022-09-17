@@ -1,15 +1,24 @@
+import java.util.Scanner;
 public class Device {
     private String name;
     private String model;
-    private String problemType;
+    private String[] problemType;
     private int requestNumber;
+    private int arraySize;
 
-    public Device (String name, String model, String problemType, int requestNumber)
+    public Device (String name, String model,int arraySize, int requestNumber)
     {
         this.name= name;
         this.requestNumber = requestNumber;
         this.model= model;
-        this.problemType = problemType;
+        this.problemType = new String[arraySize];
+        this.arraySize = arraySize;
+        for (int i = 0;i<arraySize;i++)
+        {
+            Scanner in = new Scanner(System.in);
+            String problem = in.nextLine();
+            problemType[i]=problem;
+        }
     }
     public String getName ()
     {
@@ -19,7 +28,7 @@ public class Device {
     {
         return model;
     }
-    public String getProblemType()
+    public String[] getProblemType()
     {
         return problemType;
     }
@@ -39,8 +48,7 @@ public class Device {
     {
         this.model = model;
     }
-    public void setProblemType(String problemType)
-    {
+    public void setProblemType(String[] problemType) {
         this.problemType = problemType;
     }
 
