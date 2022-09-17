@@ -4,6 +4,13 @@ public class Device {
     private String problemType;
     private int requestNumber;
 
+    public Device (String name, String model, String problemType, int requestNumber)
+    {
+        this.name= name;
+        this.requestNumber = requestNumber;
+        this.model= model;
+        this.problemType = problemType;
+    }
     public String getName ()
     {
         return name;
