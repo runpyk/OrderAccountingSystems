@@ -44,4 +44,12 @@ public class Result {
     public int getGuaranteePeriod() {
         return guaranteePeriod;
     }
+
+    public String ResultMessage() {
+        String resultMessage;
+        resultMessage = "За ремонт, який тривав " + this.deadline + "днів, необхідно сплатити " + this.price +
+                " грн. \nНадається гарантійний період в " + this.guaranteePeriod + " р.";
+
+        return resultMessage;
+    }
 }
