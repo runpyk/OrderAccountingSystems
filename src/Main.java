@@ -1,31 +1,22 @@
-import java.io.IOException;
-
-import java.io.*;
-
-import java.util.ArrayList;
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        //Employee massage = new Employee("Дмитрук О.В ", " Інженер");
+       // Employee massage2 = new Employee("Гуцалюк А.В ", " Інженер");
+        Result massage = new Result(1, 1000, 32, 2 );
+        // System.out.println(massage.PQ());
+       // System.out.println(massage2.PQ());
+        Device deviceDell = new Device("Dell","P75", 3, 21) ;
+        String[] deviceDellProblemType = deviceDell.getProblemType();
 
-        Device gadJet = new Device("Dell","P75", 3, 21) ;
-        String[] e = gadJet.getProblemType();
+        //System.out.println(massage.ResultMessage());
+
         System.out.println("Проблема: ");
-
-        File file = new File("problem.txt");
-        FileWriter writer = new FileWriter(file.getAbsolutePath(),true);
-        writer.write("HASHSET");
-
-        writer.close();
-        FileReader reader = new FileReader(file.getAbsolutePath());
-        BufferedReader bufferedReader = new BufferedReader(reader);
-        String fileStrings;
-        ArrayList<String> arrayList = new ArrayList<>();
-        while( (fileStrings = bufferedReader.readLine()) != null) {
-            arrayList.add(fileStrings);
-        }
         for (int i = 0;i<3;i++)
         {
-        System.out.println(e[i]);
+        System.out.println(deviceDellProblemType[i]);
         }
+
+
     }
-    //yu
+    //
 }
