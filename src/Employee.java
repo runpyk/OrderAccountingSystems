@@ -4,7 +4,21 @@ abstract class Employee {
      public abstract void Work();
 
     }
+    abstract interface Worker{
+      void doWork();
+    }
+    class Accept implements Worker{
 
+        public void doWork() {
+
+        }
+    }
+   class Repair implements Worker{
+
+    public void doWork() {
+
+    }
+   }
     class Acceptor extends Employee{
     public Acceptor(String PIB){
         this.PIB = PIB;
