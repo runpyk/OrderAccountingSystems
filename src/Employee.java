@@ -2,6 +2,7 @@ abstract class Employee {
      String PIB;
      String qualification;
      public abstract void Work();
+
     }
 
     class Acceptor extends Employee{
@@ -10,6 +11,8 @@ abstract class Employee {
         this.qualification = "Acceptor";
     }
     public void Work(){
+        System.out.println("Робітник приймає заявку");
+
     }
     public void setPIB(String PIB) {
         this.PIB = PIB;
@@ -33,6 +36,7 @@ class Engineer extends Employee{
         this.qualification = "Engineer";
     }
     public void Work(){
+        System.out.println("Робітник ремонтує пристрій");
     }
     public void setPIB(String PIB) {
         this.PIB = PIB;
