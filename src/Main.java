@@ -7,7 +7,7 @@ public class Main {
        // System.out.println(massage2.PQ());
         Device deviceDell = new Device("Dell","P75", 3, 21) ;
         String[] deviceDellProblemType = deviceDell.getProblemType();
-
+        MainFrame myFrame = new MainFrame();
         //System.out.println(massage.ResultMessage());
 
         System.out.println("Проблема: ");
