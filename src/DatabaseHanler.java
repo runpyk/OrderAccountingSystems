@@ -1,12 +1,7 @@
-
 import java.sql.*;
-//import java.sql.DriverManager;
-//import java.sql.PreparedStatement;
 import java.util.Properties;
-
 public class DatabaseHanler extends Config {
     Connection dbConnection;
-
     public Connection getDbConnection() throws ClassNotFoundException, SQLException
     {
         String connectionString = "jdbc:mysql://" + dbHost+":"+dbPort+"/"+dbName;
@@ -14,7 +9,6 @@ public class DatabaseHanler extends Config {
         dbConnection=DriverManager.getConnection(connectionString, dbUser, dbPass);
         return dbConnection;
     }
-
     //Write
     public void writeApp(String repairMan,int deadLine,int request)
     {

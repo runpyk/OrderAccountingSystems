@@ -15,9 +15,14 @@ public class Main {
         //{
         //System.out.println(deviceDellProblemType[i]);
         //}
-        
-        DatabaseHanler dbHendler = new DatabaseHanler();
-        dbHendler.writeApp("Gutsal",10,5182);
+
+        Multi m1 =new Multi("thread-1");
+        m1.start();
+        Multi m2 =new Multi("thread-2");
+        m2.start();
+
+        //DatabaseHanler dbHendler = new DatabaseHanler();
+        //dbHendler.writeApp("Gutsal",10,5182);
     }
     //o
 }
