@@ -2,20 +2,20 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.*;
-import java.awt.event.*;
+
 public class MainFrame extends JFrame {
     private JTextField textField1;
     private JTextField textField2;
     private JTextField textField3;
     private JButton OKButton;
-    private JButton saveToCollectionButton;
     private JPanel Device;
+    private JButton наступнаЗаявкаButton;
 
     public MainFrame() {
-        super("Device");
+        super("Заявки");
         setContentPane(Device);
         Container container = this.getContentPane();
-        this.setBounds(400,400,250,250);
+        this.setBounds(900,900,550,550);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         OKButton.addActionListener(new ActionListener() {
@@ -36,6 +36,4 @@ public class MainFrame extends JFrame {
             }
         });
     }
-
-
 }
